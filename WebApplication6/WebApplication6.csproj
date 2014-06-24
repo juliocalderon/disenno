@@ -1,0 +1,560 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2085DB37-F62C-4A03-A164-B447094442F2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApplication6</RootNamespace>
+    <AssemblyName>WebApplication6</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DefaultAdmin.aspx" />
+    <Content Include="ModificarInventario.aspx" />
+    <Content Include="checkout.aspx" />
+    <Content Include="images\background.gif" />
+    <Content Include="images\blue\background.gif" />
+    <Content Include="images\blue\border-a.png" />
+    <Content Include="images\blue\border-b.png" />
+    <Content Include="images\blue\border-c.gif" />
+    <Content Include="images\blue\border-d.gif" />
+    <Content Include="images\blue\border-e.png" />
+    <Content Include="images\blue\border-f.png" />
+    <Content Include="images\blue\fancybox\blank.gif" />
+    <Content Include="images\blue\fancybox\fancybox-x.png" />
+    <Content Include="images\blue\fancybox\fancybox-y.png" />
+    <Content Include="images\blue\fancybox\fancybox.png" />
+    <Content Include="images\blue\fancybox\fancy_close.png" />
+    <Content Include="images\blue\fancybox\fancy_loading.png" />
+    <Content Include="images\blue\fancybox\fancy_nav_left.png" />
+    <Content Include="images\blue\fancybox\fancy_nav_right.png" />
+    <Content Include="images\blue\fancybox\fancy_shadow_e.png" />
+    <Content Include="images\blue\fancybox\fancy_shadow_n.png" />
+    <Content Include="images\blue\fancybox\fancy_shadow_ne.png" />
+    <Content Include="images\blue\fancybox\fancy_shadow_nw.png" />
+    <Content Include="images\blue\fancybox\fancy_shadow_s.png" />
+    <Content Include="images\blue\fancybox\fancy_shadow_se.png" />
+    <Content Include="images\blue\fancybox\fancy_shadow_sw.png" />
+    <Content Include="images\blue\fancybox\fancy_shadow_w.png" />
+    <Content Include="images\blue\fancybox\fancy_title_left.png" />
+    <Content Include="images\blue\fancybox\fancy_title_main.png" />
+    <Content Include="images\blue\fancybox\fancy_title_over.png" />
+    <Content Include="images\blue\fancybox\fancy_title_right.png" />
+    <Content Include="images\blue\footer-top.png" />
+    <Content Include="images\blue\footer.png" />
+    <Content Include="images\blue\gallery-a.png" />
+    <Content Include="images\blue\icons\a.png" />
+    <Content Include="images\blue\icons\b.png" />
+    <Content Include="images\blue\li-a.png" />
+    <Content Include="images\blue\logo\a.png" />
+    <Content Include="images\blue\love.png" />
+    <Content Include="images\blue\nav.png" />
+    <Content Include="images\blue\pattern-a.png" />
+    <Content Include="images\blue\pattern-b.png" />
+    <Content Include="images\blue\shade-a.png" />
+    <Content Include="images\blue\shade-b.png" />
+    <Content Include="images\blue\shade-c.png" />
+    <Content Include="images\blue\shade-d.png" />
+    <Content Include="images\blue\shade-e.png" />
+    <Content Include="images\blue\shade-f.png" />
+    <Content Include="images\blue\sprite-a.png" />
+    <Content Include="images\blue\top.png" />
+    <Content Include="images\border-a.png" />
+    <Content Include="images\border-b.png" />
+    <Content Include="images\border-c.gif" />
+    <Content Include="images\border-d.gif" />
+    <Content Include="images\border-e.png" />
+    <Content Include="images\border-f.png" />
+    <Content Include="images\fancybox\blank.gif" />
+    <Content Include="images\fancybox\fancybox-x.png" />
+    <Content Include="images\fancybox\fancybox-y.png" />
+    <Content Include="images\fancybox\fancybox.png" />
+    <Content Include="images\fancybox\fancy_close.png" />
+    <Content Include="images\fancybox\fancy_loading.png" />
+    <Content Include="images\fancybox\fancy_nav_left.png" />
+    <Content Include="images\fancybox\fancy_nav_right.png" />
+    <Content Include="images\fancybox\fancy_shadow_e.png" />
+    <Content Include="images\fancybox\fancy_shadow_n.png" />
+    <Content Include="images\fancybox\fancy_shadow_ne.png" />
+    <Content Include="images\fancybox\fancy_shadow_nw.png" />
+    <Content Include="images\fancybox\fancy_shadow_s.png" />
+    <Content Include="images\fancybox\fancy_shadow_se.png" />
+    <Content Include="images\fancybox\fancy_shadow_sw.png" />
+    <Content Include="images\fancybox\fancy_shadow_w.png" />
+    <Content Include="images\fancybox\fancy_title_left.png" />
+    <Content Include="images\fancybox\fancy_title_main.png" />
+    <Content Include="images\fancybox\fancy_title_over.png" />
+    <Content Include="images\fancybox\fancy_title_right.png" />
+    <Content Include="images\footer-top.png" />
+    <Content Include="images\footer.png" />
+    <Content Include="images\fotos-fondos-reposteria-L-sqVbk5.jpeg" />
+    <Content Include="images\gallery-a.png" />
+    <Content Include="images\galletas-de-mms.jpg" />
+    <Content Include="images\green\background.gif" />
+    <Content Include="images\green\border-a.png" />
+    <Content Include="images\green\border-b.png" />
+    <Content Include="images\green\border-c.gif" />
+    <Content Include="images\green\border-d.gif" />
+    <Content Include="images\green\border-e.png" />
+    <Content Include="images\green\border-f.png" />
+    <Content Include="images\green\fancybox\blank.gif" />
+    <Content Include="images\green\fancybox\fancybox-x.png" />
+    <Content Include="images\green\fancybox\fancybox-y.png" />
+    <Content Include="images\green\fancybox\fancybox.png" />
+    <Content Include="images\green\fancybox\fancy_close.png" />
+    <Content Include="images\green\fancybox\fancy_loading.png" />
+    <Content Include="images\green\fancybox\fancy_nav_left.png" />
+    <Content Include="images\green\fancybox\fancy_nav_right.png" />
+    <Content Include="images\green\fancybox\fancy_shadow_e.png" />
+    <Content Include="images\green\fancybox\fancy_shadow_n.png" />
+    <Content Include="images\green\fancybox\fancy_shadow_ne.png" />
+    <Content Include="images\green\fancybox\fancy_shadow_nw.png" />
+    <Content Include="images\green\fancybox\fancy_shadow_s.png" />
+    <Content Include="images\green\fancybox\fancy_shadow_se.png" />
+    <Content Include="images\green\fancybox\fancy_shadow_sw.png" />
+    <Content Include="images\green\fancybox\fancy_shadow_w.png" />
+    <Content Include="images\green\fancybox\fancy_title_left.png" />
+    <Content Include="images\green\fancybox\fancy_title_main.png" />
+    <Content Include="images\green\fancybox\fancy_title_over.png" />
+    <Content Include="images\green\fancybox\fancy_title_right.png" />
+    <Content Include="images\green\footer-top.png" />
+    <Content Include="images\green\footer.png" />
+    <Content Include="images\green\gallery-a.png" />
+    <Content Include="images\green\icons\a.png" />
+    <Content Include="images\green\icons\b.png" />
+    <Content Include="images\green\li-a.png" />
+    <Content Include="images\green\logo\a.png" />
+    <Content Include="images\green\love.png" />
+    <Content Include="images\green\nav.png" />
+    <Content Include="images\green\pattern-a.png" />
+    <Content Include="images\green\pattern-b.png" />
+    <Content Include="images\green\shade-a.png" />
+    <Content Include="images\green\shade-b.png" />
+    <Content Include="images\green\shade-c.png" />
+    <Content Include="images\green\shade-d.png" />
+    <Content Include="images\green\shade-e.png" />
+    <Content Include="images\green\shade-f.png" />
+    <Content Include="images\green\sprite-a.png" />
+    <Content Include="images\green\top.png" />
+    <Content Include="images\hallo.jpg" />
+    <Content Include="images\icono-pestana.jpg" />
+    <Content Include="images\icons\a.png" />
+    <Content Include="images\icons\b.png" />
+    <Content Include="images\li-a.png" />
+    <Content Include="images\logo.gif" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\logo1.JPG" />
+    <Content Include="images\logocest.gif" />
+    <Content Include="images\logo\a.png" />
+    <Content Include="images\love.png" />
+    <Content Include="images\marcarons.png" />
+    <Content Include="images\nav.png" />
+    <Content Include="images\pastel4.jpg" />
+    <Content Include="images\pattern-a.png" />
+    <Content Include="images\pattern-b.png" />
+    <Content Include="images\pink\background.gif" />
+    <Content Include="images\pink\border-a.png" />
+    <Content Include="images\pink\border-b.png" />
+    <Content Include="images\pink\border-c.gif" />
+    <Content Include="images\pink\border-d.gif" />
+    <Content Include="images\pink\border-e.png" />
+    <Content Include="images\pink\border-f.png" />
+    <Content Include="images\pink\fancybox\blank.gif" />
+    <Content Include="images\pink\fancybox\fancybox-x.png" />
+    <Content Include="images\pink\fancybox\fancybox-y.png" />
+    <Content Include="images\pink\fancybox\fancybox.png" />
+    <Content Include="images\pink\fancybox\fancy_close.png" />
+    <Content Include="images\pink\fancybox\fancy_loading.png" />
+    <Content Include="images\pink\fancybox\fancy_nav_left.png" />
+    <Content Include="images\pink\fancybox\fancy_nav_right.png" />
+    <Content Include="images\pink\fancybox\fancy_shadow_e.png" />
+    <Content Include="images\pink\fancybox\fancy_shadow_n.png" />
+    <Content Include="images\pink\fancybox\fancy_shadow_ne.png" />
+    <Content Include="images\pink\fancybox\fancy_shadow_nw.png" />
+    <Content Include="images\pink\fancybox\fancy_shadow_s.png" />
+    <Content Include="images\pink\fancybox\fancy_shadow_se.png" />
+    <Content Include="images\pink\fancybox\fancy_shadow_sw.png" />
+    <Content Include="images\pink\fancybox\fancy_shadow_w.png" />
+    <Content Include="images\pink\fancybox\fancy_title_left.png" />
+    <Content Include="images\pink\fancybox\fancy_title_main.png" />
+    <Content Include="images\pink\fancybox\fancy_title_over.png" />
+    <Content Include="images\pink\fancybox\fancy_title_right.png" />
+    <Content Include="images\pink\footer-top.png" />
+    <Content Include="images\pink\footer.png" />
+    <Content Include="images\pink\gallery-a.png" />
+    <Content Include="images\pink\icons\a.png" />
+    <Content Include="images\pink\icons\b.png" />
+    <Content Include="images\pink\li-a.png" />
+    <Content Include="images\pink\logo\a.png" />
+    <Content Include="images\pink\love.png" />
+    <Content Include="images\pink\nav.png" />
+    <Content Include="images\pink\pattern-a.png" />
+    <Content Include="images\pink\pattern-b.png" />
+    <Content Include="images\pink\shade-a.png" />
+    <Content Include="images\pink\shade-b.png" />
+    <Content Include="images\pink\shade-c.png" />
+    <Content Include="images\pink\shade-d.png" />
+    <Content Include="images\pink\shade-e.png" />
+    <Content Include="images\pink\shade-f.png" />
+    <Content Include="images\pink\sprite-a.png" />
+    <Content Include="images\pink\top.png" />
+    <Content Include="images\placeholder-d.png" />
+    <Content Include="images\placeholder-n-1.png" />
+    <Content Include="images\placeholder-o.png" />
+    <Content Include="images\purple\background.gif" />
+    <Content Include="images\purple\border-a.png" />
+    <Content Include="images\purple\border-b.png" />
+    <Content Include="images\purple\border-c.gif" />
+    <Content Include="images\purple\border-d.gif" />
+    <Content Include="images\purple\border-e.png" />
+    <Content Include="images\purple\border-f.png" />
+    <Content Include="images\purple\fancybox\blank.gif" />
+    <Content Include="images\purple\fancybox\fancybox-x.png" />
+    <Content Include="images\purple\fancybox\fancybox-y.png" />
+    <Content Include="images\purple\fancybox\fancybox.png" />
+    <Content Include="images\purple\fancybox\fancy_close.png" />
+    <Content Include="images\purple\fancybox\fancy_loading.png" />
+    <Content Include="images\purple\fancybox\fancy_nav_left.png" />
+    <Content Include="images\purple\fancybox\fancy_nav_right.png" />
+    <Content Include="images\purple\fancybox\fancy_shadow_e.png" />
+    <Content Include="images\purple\fancybox\fancy_shadow_n.png" />
+    <Content Include="images\purple\fancybox\fancy_shadow_ne.png" />
+    <Content Include="images\purple\fancybox\fancy_shadow_nw.png" />
+    <Content Include="images\purple\fancybox\fancy_shadow_s.png" />
+    <Content Include="images\purple\fancybox\fancy_shadow_se.png" />
+    <Content Include="images\purple\fancybox\fancy_shadow_sw.png" />
+    <Content Include="images\purple\fancybox\fancy_shadow_w.png" />
+    <Content Include="images\purple\fancybox\fancy_title_left.png" />
+    <Content Include="images\purple\fancybox\fancy_title_main.png" />
+    <Content Include="images\purple\fancybox\fancy_title_over.png" />
+    <Content Include="images\purple\fancybox\fancy_title_right.png" />
+    <Content Include="images\purple\footer-top.png" />
+    <Content Include="images\purple\footer.png" />
+    <Content Include="images\purple\gallery-a.png" />
+    <Content Include="images\purple\icons\a.png" />
+    <Content Include="images\purple\icons\b.png" />
+    <Content Include="images\purple\li-a.png" />
+    <Content Include="images\purple\logo\a.png" />
+    <Content Include="images\purple\love.png" />
+    <Content Include="images\purple\nav.png" />
+    <Content Include="images\purple\pattern-a.png" />
+    <Content Include="images\purple\pattern-b.png" />
+    <Content Include="images\purple\shade-a.png" />
+    <Content Include="images\purple\shade-b.png" />
+    <Content Include="images\purple\shade-c.png" />
+    <Content Include="images\purple\shade-d.png" />
+    <Content Include="images\purple\shade-e.png" />
+    <Content Include="images\purple\shade-f.png" />
+    <Content Include="images\purple\sprite-a.png" />
+    <Content Include="images\purple\top.png" />
+    <Content Include="images\queque1.jpg" />
+    <Content Include="images\queque2.jpg" />
+    <Content Include="images\shade-a.png" />
+    <Content Include="images\shade-b.png" />
+    <Content Include="images\shade-c.png" />
+    <Content Include="images\shade-d.png" />
+    <Content Include="images\shade-e.png" />
+    <Content Include="images\shade-f.png" />
+    <Content Include="images\sprite-a.png" />
+    <Content Include="images\top.png" />
+    <Content Include="images\Tronco Navideño 6.jpg" />
+    <Content Include="javascript\head.js" />
+    <Content Include="javascript\mobile.js" />
+    <Content Include="javascript\scripts.js" />
+    <Content Include="DefaultCliente.aspx" />
+    <Content Include="ModificarProductos.aspx" />
+    <Content Include="ModificarPromos.aspx" />
+    <Content Include="ModificarUsuarios.aspx" />
+    <Content Include="Precios.aspx" />
+    <Content Include="Productos.aspx" />
+    <Content Include="Promos.aspx" />
+    <Content Include="Site1.Master" />
+    <Content Include="nuestros-cakes.aspx" />
+    <Content Include="login-registro.aspx" />
+    <Content Include="Contacto.aspx" />
+    <Content Include="about.aspx" />
+    <Content Include="Carrito.aspx" />
+    <Content Include="Site2.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="styles-blue\print.css" />
+    <Content Include="styles-blue\screen.css" />
+    <Content Include="styles-default\print.css" />
+    <Content Include="styles-default\screen.css" />
+    <Content Include="styles-green\print.css" />
+    <Content Include="styles-green\screen.css" />
+    <Content Include="styles-orange\print.css" />
+    <Content Include="styles-orange\screen.css" />
+    <Content Include="styles-pink\print.css" />
+    <Content Include="styles-pink\screen.css" />
+    <Content Include="styles-purple\print.css" />
+    <Content Include="styles-purple\screen.css" />
+    <Content Include="styles\print.css" />
+    <Content Include="styles\screen.css" />
+    <Content Include="temp\a.html" />
+    <Content Include="temp\placeholder-a.png" />
+    <Content Include="temp\placeholder-ba.png" />
+    <Content Include="temp\placeholder-bb.png" />
+    <Content Include="temp\placeholder-c.png" />
+    <Content Include="temp\placeholder-d.png" />
+    <Content Include="temp\placeholder-d1.png" />
+    <Content Include="temp\placeholder-d2.png" />
+    <Content Include="temp\placeholder-e.png" />
+    <Content Include="temp\placeholder-f.png" />
+    <Content Include="temp\placeholder-f1.png" />
+    <Content Include="temp\placeholder-g-2.png" />
+    <Content Include="temp\placeholder-g-3.png" />
+    <Content Include="temp\placeholder-g.png" />
+    <Content Include="temp\placeholder-g1.png" />
+    <Content Include="temp\placeholder-g2.png" />
+    <Content Include="temp\placeholder-h.png" />
+    <Content Include="temp\placeholder-h1.png" />
+    <Content Include="temp\placeholder-i.png" />
+    <Content Include="temp\placeholder-j-1.png" />
+    <Content Include="temp\placeholder-j.png" />
+    <Content Include="temp\placeholder-k-1.png" />
+    <Content Include="temp\placeholder-k.png" />
+    <Content Include="temp\placeholder-l.png" />
+    <Content Include="temp\placeholder-m-1.png" />
+    <Content Include="temp\placeholder-m.png" />
+    <Content Include="temp\placeholder-n-1.png" />
+    <Content Include="temp\placeholder-n.png" />
+    <Content Include="temp\placeholder-o-1.png" />
+    <Content Include="temp\placeholder-o.png" />
+    <Content Include="Web.config" />
+    <Content Include="Default.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bd\Conexion.cs" />
+    <Compile Include="bd\Inserts.cs" />
+    <Compile Include="DefaultAdmin.aspx.cs">
+      <DependentUpon>DefaultAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DefaultAdmin.aspx.designer.cs">
+      <DependentUpon>DefaultAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarInventario.aspx.cs">
+      <DependentUpon>ModificarInventario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModificarInventario.aspx.designer.cs">
+      <DependentUpon>ModificarInventario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="checkout.aspx.cs">
+      <DependentUpon>checkout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="checkout.aspx.designer.cs">
+      <DependentUpon>checkout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DefaultCliente.aspx.cs">
+      <DependentUpon>DefaultCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DefaultCliente.aspx.designer.cs">
+      <DependentUpon>DefaultCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarProductos.aspx.cs">
+      <DependentUpon>ModificarProductos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModificarProductos.aspx.designer.cs">
+      <DependentUpon>ModificarProductos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarPromos.aspx.cs">
+      <DependentUpon>ModificarPromos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModificarPromos.aspx.designer.cs">
+      <DependentUpon>ModificarPromos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarUsuarios.aspx.cs">
+      <DependentUpon>ModificarUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModificarUsuarios.aspx.designer.cs">
+      <DependentUpon>ModificarUsuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Precios.aspx.cs">
+      <DependentUpon>Precios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Precios.aspx.designer.cs">
+      <DependentUpon>Precios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Productos.aspx.cs">
+      <DependentUpon>Productos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Productos.aspx.designer.cs">
+      <DependentUpon>Productos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Progra_Clases\Administrador.cs" />
+    <Compile Include="Progra_Clases\Carrito.cs" />
+    <Compile Include="Progra_Clases\Cliente.cs" />
+    <Compile Include="Progra_Clases\Compra.cs" />
+    <Compile Include="Progra_Clases\Globales.cs" />
+    <Compile Include="Progra_Clases\Historial_Compra.cs" />
+    <Compile Include="Progra_Clases\Inventario.cs" />
+    <Compile Include="Progra_Clases\ObservadorProducto.cs" />
+    <Compile Include="Progra_Clases\Producto.cs" />
+    <Compile Include="Progra_Clases\Producto_Carrito.cs" />
+    <Compile Include="Progra_Clases\Producto_Especifico.cs" />
+    <Compile Include="Progra_Clases\Promociones.cs" />
+    <Compile Include="Progra_Clases\ReadOnlyProducto.cs" />
+    <Compile Include="Progra_Clases\Rol.cs" />
+    <Compile Include="Progra_Clases\Usuario.cs" />
+    <Compile Include="Promos.aspx.cs">
+      <DependentUpon>Promos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Promos.aspx.designer.cs">
+      <DependentUpon>Promos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site2.Master.cs">
+      <DependentUpon>Site2.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site2.Master.designer.cs">
+      <DependentUpon>Site2.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="nuestros-cakes.aspx.cs">
+      <DependentUpon>nuestros-cakes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nuestros-cakes.aspx.designer.cs">
+      <DependentUpon>nuestros-cakes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login-registro.aspx.cs">
+      <DependentUpon>login-registro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login-registro.aspx.designer.cs">
+      <DependentUpon>login-registro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contacto.aspx.cs">
+      <DependentUpon>Contacto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contacto.aspx.designer.cs">
+      <DependentUpon>Contacto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="about.aspx.cs">
+      <DependentUpon>about.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="about.aspx.designer.cs">
+      <DependentUpon>about.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Carrito.aspx.cs">
+      <DependentUpon>Carrito.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Carrito.aspx.designer.cs">
+      <DependentUpon>Carrito.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>6409</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:6409/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
